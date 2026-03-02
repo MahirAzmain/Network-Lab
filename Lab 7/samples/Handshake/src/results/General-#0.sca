@@ -1,0 +1,26 @@
+version 3
+run General-0-20250910-22:32:53-7300
+attr configname General
+attr datetime 20250910-22:32:53
+attr datetimef 20250910-223253
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network HandshakeNetwork
+attr processid 7300
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network HandshakeNetwork
+
+par HandshakeNetwork.sender.out.channel typename "\"ned.IdealChannel\""
+par HandshakeNetwork.receiver.out.channel typename "\"ned.IdealChannel\""
+par HandshakeNetwork.sender typename "\"twowayhandshake.HandshakeNetwork.Sender\""
+par HandshakeNetwork.receiver typename "\"twowayhandshake.HandshakeNetwork.Receiver\""
+par HandshakeNetwork typename "\"twowayhandshake.HandshakeNetwork\""
+
